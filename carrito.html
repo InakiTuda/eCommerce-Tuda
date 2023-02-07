@@ -36,68 +36,30 @@
         <main>
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carrito">
-                <p class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío <i class="bi bi-emoji-frown"></i></p>
 
-                <div class="carrito-productos disabled">
-
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="./img/pcgamer1.jpeg" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Título</small>
-                            <h3>GP9800 Amd Ryzen 9 5950X-32Gb-RTX3080 TI</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$887508</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$887508</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                    </div>
-                    <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="./img/pcgamer2.jpeg" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Título</small>
-                            <h3>GP8900 Intel Core i9 12900-32GB-RX6800XT</h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <p>1</p>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <p>$743194</p>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <p>$743194</p>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash3-fill"></i></button>
-                    </div>
-
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- Aca se rellena con JS-->
                 </div>
 
-                <div class="carrito-acciones disabled">
+                <div id="carrito-acciones" class="carrito-acciones disabled">
                     <div class="carrito-acciones-izquierda">
-                        <button class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar Carrito</button>
                     </div>
                     <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
                             <p>Total:</p>
                             <p id="total">$1.630.702</p>
                         </div>
-                        <button class="carrito-acciones-comprar">Comprar Ahora</button>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar Ahora</button>
                     </div>
                 </div>
 
-                <p class="carrito-comprado disabled">¡Muchas gracias por tu compra! <i class="bi bi-emoji-laughing"></i></p>
+                <p id="carrito-comprado" class="carrito-comprado disabled">¡Muchas gracias por tu compra! <i class="bi bi-emoji-laughing"></i></p>
 
             </div>
         </main>
     </div>
+    <script src="./js/carrito.js"></script>
+</body>
+</html>
